@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Koronawirus w Polsce</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <h1 class="header">Koronawirus w Polsce</h1>
+      <div class="dataFields">
+      <h2 class="dataFields__element">
+        <i class="fas fa-check-circle"></i>Potwierdzone:<span
+          class="dataFields__number" data-type="confirmed"
+        ></span>
+      </h2>
+      <h2 class="dataFields__element">
+        <i class="fas fa-skull-crossbones"></i>Zmarli:<span
+          data-type="deaths" class="dataFields__number"
+        ></span>
+      </h2>
+      <h2 class="dataFields__element">
+        <i class="fas fa-heart"></i>
+        Wyleczeni:<span class="dataFields__number" data-type="recovered"></span>
+      </h2>
+    </div>
+      <div class="refresh">
+        <div><button class="refresh__button fas fa-sync-alt"></button></div>
+        <div>Ostatnia aktualizacja:<span class="refresh__info"></span></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
